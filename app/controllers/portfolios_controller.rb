@@ -46,6 +46,6 @@ class PortfoliosController < ApplicationController
   end
 
   def set_portfilio_item
-    @portfolio_items = Portfolio.find(params[:id])
+    @portfolio_item = Portfolio.find(params[:id])
   end
 end
