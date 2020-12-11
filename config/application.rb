@@ -37,5 +37,7 @@ module BlogPortfolio
       g.javascript      false
       g.orm             :active_record
     end
+
+    config.action_controller.permit_all_paramters = true
   end
 end

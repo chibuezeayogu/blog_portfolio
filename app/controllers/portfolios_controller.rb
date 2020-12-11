@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PortfoliosController < ApplicationController
   before_action :set_portfilio_item, only: %i[show edit update destroy]
 
@@ -52,7 +54,7 @@ class PortfoliosController < ApplicationController
 
   def portfolio_item_params
     params.require(:portfolio).permit(:title, :subtitle, :body,
-        technologies_attributes: %i[name])
+                                      technologies_attributes: %i[name])
   end
 
   def set_portfilio_item
