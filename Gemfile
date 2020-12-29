@@ -33,6 +33,7 @@ gem 'bootstrap', '~> 5.0.0.alpha3'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'friendly_id', '~> 5.4.0'
 gem 'jquery-rails'
+gem 'petergate', '~> 1.6', '>= 1.6.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
