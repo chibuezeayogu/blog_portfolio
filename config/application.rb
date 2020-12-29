@@ -38,6 +38,6 @@ module BlogPortfolio
       g.orm             :active_record
     end
 
-    config.action_controller.permit_all_paramters = true
+    # config.action_controller.permit_all_paramters = true
   end
 end
