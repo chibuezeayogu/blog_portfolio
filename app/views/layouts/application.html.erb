@@ -7,8 +7,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="keywords" content="<%= @seo_keywords %>">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -27,15 +27,12 @@
   </head>
 
   <body class="d-flex h-100 text-center text-white bg-dark">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <%= render  'shared/application_nav' %> 
+      <!-- <%= login_helper %> -->
 
-   <%= render  'shared/nav',  location: 'top' %> 
-    <%= login_helper %>
-
-    <%= yield %>
-
-    <br />
-    <%= source_helper %>
+      <%= yield %>
+      <%= render 'shared/application_footer' %>
+    </div>
   </body>
 </html>
